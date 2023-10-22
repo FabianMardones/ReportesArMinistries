@@ -19,7 +19,7 @@ html{
 }
   body {
     width: 100%;
-    height: 100vh; /* Ajusta la altura para que cubra toda la pantalla */
+    height: 100%; /* Ajusta la altura para que cubra toda la pantalla */
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     overflow-y: auto;
@@ -68,9 +68,12 @@ body{
     right: 100%;
 }
 
+.nav-genera{
+    margin-bottom: -5rem;
+}
 
 .container-cards{
-    margin-top: 3rem;
+    margin-top: 17rem;
     max-width: 100%;
 }
 
@@ -251,8 +254,9 @@ button{
 }
 
 .dark-light-mode_button {
-    position: absolute;
+    position: fixed;
     display: flex;
+    width: 5rem;
     align-items: center;
     padding: 3rem 2.5rem;
     top: 14rem;
@@ -294,6 +298,9 @@ button{
     color: gold;
 }
 
+.nav-edit{
+    margin-top: 3.5rem;
+}
 
 .dark{
 
@@ -406,9 +413,15 @@ button{
 
 }
 
+@media (max-width: 990px) {
+    .nav-edit{
+        margin-top: 3.5rem;
+    }
+}
+
 @media (max-width: 980px) {
     .container-cards{
-        margin-top: 1rem;
+        margin-top: 16rem;
     }
     .dark-light-mode_button{
         top: 5.5rem;
@@ -441,9 +454,6 @@ button{
 
 
 @media (max-width: 780px) {
-    .container-cards{
-        margin-top: 1rem;
-    }
     .card3 h3{
         left: -3rem;
     }

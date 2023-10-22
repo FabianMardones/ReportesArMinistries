@@ -18,15 +18,15 @@
 </head>
 <body>
 
-    <section class="no-print">
-      <nav class="navbar bg-body-tertiary">
+    <section class="no-print fixed-top">
+      <nav class="navbar bg-body-tertiary nav-genera">
         <div class="container-fluid">
           <span class="navbar-text">
             Genera tus reportes <i class="fa-solid fa-face-smile"></i>
           </span>
         </div>
       </nav>
-      <nav class="navbar navbar-expand-lg nav-edit">
+      <nav class="navbar navbar-expand-lg nav-edit fixed-top">
         <div class="container-fluid">
             <h3 class="navbar-brand ar fs-3" href="#">ar <strong>ministries</strong></h3>
             <button class="navbar-toggler botonD" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
     </section>
 
 
-    <div class="dark-light-mode_button switch no-print">
+    <div class="dark-light-mode_button switch no-print fixed-top">
       <div class="button__shadow">
           <i class="fa fa-solid fa-moon luna"></i>
           <i class="fa fa-solid fa-sun oculto sol"></i>
@@ -93,9 +93,11 @@
           </div>
           <div class="row g-3">
             <div class="col">
+              <label for="floatingInput">Fecha</label>
               <input type="date" class="form-control form-control-lg mb-3" placeholder="Fecha" aria-label="date" id="fecha" name="fecha">
             </div>
             <div class="col">
+              <label for="floatingInput">Hora</label>
               <input type="time" class="form-control form-control-lg mb-3" placeholder="Hora" aria-label="time" id="hora" name="hora">
             </div>
           </div>
@@ -230,8 +232,8 @@
           </div>
 
           <div class="mb-5 d-flex w-100">
-            <button class="btn w-50 fs-4 btn-enviar btn-calcular" type="submit" id="registrar" disabled>Registrar y Generar PDF</button>
-            <button class="w-50 btn fs-4 ms-2 btn-resetear btn-calcular" id='reset' type="reset">Reset</button>
+            <button class="btn w-50 fs-4 btn-enviar btn-calcular mb-5" type="submit" id="registrar" disabled>Registrar y Generar PDF</button>
+            <button class="w-50 btn fs-4 ms-2 btn-resetear btn-calcular mb-5" id='reset' type="reset">Reset</button>
           </div>
         </form>
       </div>
